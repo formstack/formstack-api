@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.formstack.com/api/v2/form/1234
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 05 Nov 2014 15:13:30 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '51'
+      Connection:
+      - keep-alive
+      P3p:
+      - CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI
+        DSP COR"
+      Set-Cookie:
+      - FormstackAdmin=psqkk3dh0ftpk2behqd9nu4hk6; path=/api/; secure; HttpOnly
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","error":"The form was not found"}'
+    http_version: 
+  recorded_at: Wed, 05 Nov 2014 15:13:29 GMT
+recorded_with: VCR 2.9.3

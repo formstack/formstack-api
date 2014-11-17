@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.formstack.com/api/v2/form/<SUBMISSION_DETAILS_FORM_ID>/field
+    body:
+      encoding: UTF-8
+      string: field_type=text&label=Test%20Field%202014-11-14%2015%3A18%3A19%20%2B0100
+    headers:
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 14 Nov 2014 14:18:20 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '277'
+      Connection:
+      - keep-alive
+      P3p:
+      - CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI
+        DSP COR"
+      Set-Cookie:
+      - FormstackAdmin=qken3fl9lj64pkqcu7t7dv8513; path=/api/; secure; HttpOnly
+      Location:
+      - https://www.formstack.com/api/v2/form/<SUBMISSION_DETAILS_FORM_ID>/field/28731003.json
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow
+    body:
+      encoding: UTF-8
+      string: '{"id":"28731003","label":"Test Field 2014-11-14 15:18:19 +0100","hide_label":"0","description":null,"name":"test_field_20141114_151819_0100","type":"text","options":"","default":"","required":"0","uniq":"0","hidden":"0","readonly":"0","colspan":"1","sort":"13","text_size":"a"}'
+    http_version: 
+  recorded_at: Fri, 14 Nov 2014 14:18:19 GMT
+recorded_with: VCR 2.9.3
