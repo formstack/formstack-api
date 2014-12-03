@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.formstack.com/api/v2/form/<SUBMISSION_DETAILS_FORM_ID>/submission.json
+    body:
+      encoding: UTF-8
+      string: read=0&field_28705506=short-answer-test&field_28706107[first]=first-test&field_28706107[last]=last-test&field_28706112=this%20is%20a%20long%20answer%20field
+    headers:
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 14 Nov 2014 09:51:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '442'
+      Connection:
+      - keep-alive
+      P3p:
+      - CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI
+        DSP COR"
+      Set-Cookie:
+      - FormstackAdmin=tnl1ed1ttf34nrfeggemndrq64; path=/api/; secure; HttpOnly
+      Location:
+      - https://www.formstack.com/api/v2/form/<SUBMISSION_DETAILS_FORM_ID>/submission/171943139.json
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow
+    body:
+      encoding: UTF-8
+      string: '{"id":"171943139","message":"<p>The form was submitted successfully.<\/p>","timestamp":"2014-11-14
+        10:51:14","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","form":"<SUBMISSION_DETAILS_FORM_ID>","latitude":null,"longitude":null,"data":[{"field":"28705506","value":"short-answer-test"},{"field":"28706107","value":"first
+        = first-test\nlast = last-test\n"},{"field":"28706112","value":"this is a
+        long answer field"}],"pretty_field_id":"28706107"}'
+    http_version: 
+  recorded_at: Fri, 14 Nov 2014 09:51:14 GMT
+recorded_with: VCR 2.9.3

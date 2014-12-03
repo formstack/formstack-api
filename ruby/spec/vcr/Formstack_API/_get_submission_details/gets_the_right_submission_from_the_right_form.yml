@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.formstack.com/api/v2/submission/<SUBMISSION_DETAILS_ID>.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 14 Nov 2014 10:33:04 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '385'
+      Connection:
+      - keep-alive
+      P3p:
+      - CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI
+        DSP COR"
+      Set-Cookie:
+      - FormstackAdmin=mbgis5r0lu9olmkb2e51p8t7a1; path=/api/; secure; HttpOnly
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow
+    body:
+      encoding: UTF-8
+      string: '{"id":"<SUBMISSION_DETAILS_ID>","timestamp":"2014-11-14 08:56:33","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","form":"<SUBMISSION_DETAILS_FORM_ID>","latitude":null,"longitude":null,"data":[{"field":"28705506","value":"short-answer-test"},{"field":"28706107","value":"first
+        = first-test\nlast = last-test\n"},{"field":"28706112","value":"this is a
+        long answer field"}],"pretty_field_id":"28706107"}'
+    http_version: 
+  recorded_at: Fri, 14 Nov 2014 10:33:03 GMT
+recorded_with: VCR 2.9.3

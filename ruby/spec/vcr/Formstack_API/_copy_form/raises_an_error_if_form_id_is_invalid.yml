@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.formstack.com/api/v2/form/1234/copy
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 05 Nov 2014 15:13:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '61'
+      Connection:
+      - keep-alive
+      P3p:
+      - CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI
+        DSP COR"
+      Set-Cookie:
+      - FormstackAdmin=9atv6r9l2v3otdd7i5f4n08k52; path=/api/; secure; HttpOnly
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","error":"A valid form id was not supplied"}'
+    http_version: 
+  recorded_at: Wed, 05 Nov 2014 15:13:32 GMT
+recorded_with: VCR 2.9.3

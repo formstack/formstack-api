@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.formstack.com/api/v2/form/<SUBMISSION_DETAILS_FORM_ID>/submission.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 14 Nov 2014 13:43:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4293'
+      Connection:
+      - keep-alive
+      P3p:
+      - CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI
+        DSP COR"
+      Set-Cookie:
+      - FormstackAdmin=butofevt5c01d5hgaasvrvdqv0; path=/api/; secure; HttpOnly
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow
+    body:
+      encoding: UTF-8
+      string: '{"submissions":[{"id":"171821388","timestamp":"2014-11-13 13:44:07","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171821406","timestamp":"2014-11-13
+        13:44:21","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171822918","timestamp":"2014-11-13
+        14:05:06","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171823092","timestamp":"2014-11-13
+        14:07:17","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171823107","timestamp":"2014-11-13
+        14:07:28","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171823163","timestamp":"2014-11-13
+        14:08:11","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171824009","timestamp":"2014-11-13
+        14:18:50","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171824066","timestamp":"2014-11-13
+        14:19:28","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171824379","timestamp":"2014-11-13
+        14:23:00","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171824395","timestamp":"2014-11-13
+        14:23:09","user_agent":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit\/537.36
+        (KHTML, like Gecko) Chrome\/38.0.2125.111 Safari\/537.36","remote_addr":"89.202.154.170","payment_status":"","latitude":"47","longitude":"8","read":"1"},{"id":"171824436","timestamp":"2014-11-13
+        14:23:43","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171824500","timestamp":"2014-11-13
+        14:24:34","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171824576","timestamp":"2014-11-13
+        14:25:33","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171824682","timestamp":"2014-11-13
+        14:26:30","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171824794","timestamp":"2014-11-13
+        14:27:45","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171824845","timestamp":"2014-11-13
+        14:28:18","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171824938","timestamp":"2014-11-13
+        14:29:04","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171825201","timestamp":"2014-11-13
+        14:32:20","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171825451","timestamp":"2014-11-13
+        14:34:48","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171826184","timestamp":"2014-11-13
+        14:42:23","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171826216","timestamp":"2014-11-13
+        14:42:44","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171826235","timestamp":"2014-11-13
+        14:42:56","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171826254","timestamp":"2014-11-13
+        14:43:09","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171826404","timestamp":"2014-11-13
+        14:44:43","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"},{"id":"171826640","timestamp":"2014-11-13
+        14:47:27","user_agent":"","remote_addr":"89.202.154.170","payment_status":"","latitude":null,"longitude":null,"read":"1"}],"total":"75","pages":3,"pretty_field_id":"28706107"}'
+    http_version: 
+  recorded_at: Fri, 14 Nov 2014 13:43:33 GMT
+recorded_with: VCR 2.9.3

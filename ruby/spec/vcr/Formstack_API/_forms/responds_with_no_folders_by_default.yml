@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.formstack.com/api/v2/form.json?folders=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 05 Nov 2014 15:13:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3591'
+      Connection:
+      - keep-alive
+      P3p:
+      - CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI
+        DSP COR"
+      Set-Cookie:
+      - FormstackAdmin=5p2bifivcmja3qi69mi7ei7j24; path=/api/; secure; HttpOnly
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"forms":[{"id":"<FORM_ID>","name":"Test Form","viewkey":"ex3qBur1AS","views":"4","created":"2014-09-17
+        19:44:47","updated":"2014-11-05 09:37:02","deleted":"0","submissions":"0","submissions_unread":"0","submissions_today":0,"url":"http:\/\/www.formstack.com\/forms\/?<FORM_ID>-ex3qBur1AS","data_url":"","summary_url":"","rss_url":"","encrypted":false,"thumbnail_url":"https:\/\/s3.amazonaws.com\/files.formstack.com\/admin\/","submit_button_title":null,"inactive":false,"timezone":"US\/Eastern","permissions":"full"},{"id":"1867858","name":"Test
+        Form - COPY","viewkey":"ex3qBur1AS","views":"0","created":"2014-11-05 15:38:45","updated":"2014-11-05
+        09:55:04","deleted":"0","submissions":"0","submissions_unread":"0","submissions_today":0,"url":"http:\/\/www.formstack.com\/forms\/?1867858-ex3qBur1AS","data_url":"","summary_url":"","rss_url":"","encrypted":false,"thumbnail_url":"https:\/\/s3.amazonaws.com\/files.formstack.com\/admin\/","submit_button_title":null,"inactive":false,"timezone":"US\/Eastern","permissions":"full"},{"id":"1867867","name":"Test
+        Form - COPY 2","viewkey":"ex3qBur1AS","views":"0","created":"2014-11-05 15:58:27","updated":"2014-11-05
+        09:58:27","deleted":"0","submissions":"0","submissions_unread":"0","submissions_today":0,"url":"http:\/\/www.formstack.com\/forms\/?1867867-ex3qBur1AS","data_url":"","summary_url":"","rss_url":"","encrypted":false,"thumbnail_url":"https:\/\/s3.amazonaws.com\/files.formstack.com\/admin\/","submit_button_title":null,"inactive":false,"timezone":"US\/Eastern","permissions":"full"},{"id":"1867869","name":"Test
+        Form - COPY 3","viewkey":"ex3qBur1AS","views":"0","created":"2014-11-05 16:00:16","updated":"2014-11-05
+        10:00:16","deleted":"0","submissions":"0","submissions_unread":"0","submissions_today":0,"url":"http:\/\/www.formstack.com\/forms\/?1867869-ex3qBur1AS","data_url":"","summary_url":"","rss_url":"","encrypted":false,"thumbnail_url":"https:\/\/s3.amazonaws.com\/files.formstack.com\/admin\/","submit_button_title":null,"inactive":false,"timezone":"US\/Eastern","permissions":"full"},{"id":"1867872","name":"Test
+        Form - COPY 4","viewkey":"ex3qBur1AS","views":"0","created":"2014-11-05 16:01:47","updated":"2014-11-05
+        10:01:47","deleted":"0","submissions":"0","submissions_unread":"0","submissions_today":0,"url":"http:\/\/www.formstack.com\/forms\/?1867872-ex3qBur1AS","data_url":"","summary_url":"","rss_url":"","encrypted":false,"thumbnail_url":"https:\/\/s3.amazonaws.com\/files.formstack.com\/admin\/","submit_button_title":null,"inactive":false,"timezone":"US\/Eastern","permissions":"full"},{"id":"1867873","name":"Test
+        Form - COPY 5","viewkey":"ex3qBur1AS","views":"0","created":"2014-11-05 16:03:03","updated":"2014-11-05
+        10:03:03","deleted":"0","submissions":"0","submissions_unread":"0","submissions_today":0,"url":"http:\/\/www.formstack.com\/forms\/?1867873-ex3qBur1AS","data_url":"","summary_url":"","rss_url":"","encrypted":false,"thumbnail_url":"https:\/\/s3.amazonaws.com\/files.formstack.com\/admin\/","submit_button_title":null,"inactive":false,"timezone":"US\/Eastern","permissions":"full"},{"id":"1867884","name":"Test
+        Form - COPY 6","viewkey":"ex3qBur1AS","views":"0","created":"2014-11-05 16:10:09","updated":"2014-11-05
+        10:10:09","deleted":"0","submissions":"0","submissions_unread":"0","submissions_today":0,"url":"http:\/\/www.formstack.com\/forms\/?1867884-ex3qBur1AS","data_url":"","summary_url":"","rss_url":"","encrypted":false,"thumbnail_url":"https:\/\/s3.amazonaws.com\/files.formstack.com\/admin\/","submit_button_title":null,"inactive":false,"timezone":"US\/Eastern","permissions":"full"}]}'
+    http_version: 
+  recorded_at: Wed, 05 Nov 2014 15:13:27 GMT
+recorded_with: VCR 2.9.3
