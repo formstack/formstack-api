@@ -287,6 +287,31 @@ class FormstackApi {
     }
 
     /**
+     * Create a new Submission for the specified Form using data stored in an associative array
+     *
+     * @link    https://www.formstack.com/developers/api/resources/submission#form/:id/submission_POST
+     *
+     * @param   int     $formId         The ID of the Form to submit to
+     * @param   array   $fieldData      Array of Field data (ids with values) to submit
+     * @param   string  $timestamp      String representation of YYYY-MM-DD HH:MM:SS time that should be recorded
+     * @param   string  $userAgent      Browser user agent value that should be recorded
+     * @param   string  $ipAddress      IP Address that should be recorded
+     * @param   string  $paymentStatus  Status of payment integration(s) (if applicable)
+     * @param   bool    $read           Flag (true or false) indicating whether the Submission was read
+     *
+     * @throws  Exception               If a non-numeric Form ID was provided
+     * @throws  Exception               If an invalid Date/Time string was provided for $timestamp
+     *
+     * @return  object  $response       \stdClass representation of Submission response
+     */
+    public function submitFormAssoc($formId, $fieldData = array(),
+        $timestamp = '', $userAgent = '', $ipAddress = '', $paymentStatus = '', $read = false) {
+
+        return $this->submitForm($formId, array_keys($fieldData), array_values($fieldData),
+        $timestamp = '', $userAgent = '', $ipAddress = '', $paymentStatus = '', $read = false);
+    }
+
+    /**
      * Get the details of a specific Submission
      *
      * @link    https://www.formstack.com/developers/api/resources/submission#submission/:id_GET
