@@ -1,0 +1,7 @@
+# See https://help.github.com/articles/about-codeowners/
+# This file is managed by Terraform directly with the repository itself.
+
+# Global owner of repository
+* @formstack/fs-forms
+
+
